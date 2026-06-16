@@ -28,43 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            btnAdminPanel = new Button();
+            BtnLogout = new Button();
+            lblWelcome = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnAdminPanel
             // 
-            button1.Location = new Point(97, 263);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnAdminPanel.Location = new Point(30, 146);
+            btnAdminPanel.Name = "btnAdminPanel";
+            btnAdminPanel.Size = new Size(119, 35);
+            btnAdminPanel.TabIndex = 0;
+            btnAdminPanel.Text = "Admin";
+            btnAdminPanel.UseVisualStyleBackColor = true;
+            btnAdminPanel.Click += btnAdminPanel_Click;
             // 
-            // button2
+            // BtnLogout
             // 
-            button2.Location = new Point(319, 263);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            BtnLogout.Location = new Point(191, 146);
+            BtnLogout.Name = "BtnLogout";
+            BtnLogout.Size = new Size(119, 35);
+            BtnLogout.TabIndex = 1;
+            BtnLogout.Text = "Logout";
+            BtnLogout.UseVisualStyleBackColor = true;
+            BtnLogout.Click += BtnLogout_Click;
+            // 
+            // lblWelcome
+            // 
+            lblWelcome.AutoSize = true;
+            lblWelcome.Font = new Font("Segoe UI", 25F);
+            lblWelcome.Location = new Point(30, 40);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(160, 46);
+            lblWelcome.TabIndex = 2;
+            lblWelcome.Text = "Welcome";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(621, 336);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(491, 231);
+            Controls.Add(lblWelcome);
+            Controls.Add(BtnLogout);
+            Controls.Add(btnAdminPanel);
             Name = "MainForm";
             Text = "MainForm";
+            Load += MainForm_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnAdminPanel;
+        private Button BtnLogout;
+        private Label lblWelcome;
     }
 }
