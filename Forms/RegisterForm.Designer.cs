@@ -107,6 +107,7 @@
             txtConfirm.Name = "txtConfirm";
             txtConfirm.Size = new Size(211, 23);
             txtConfirm.TabIndex = 7;
+            txtConfirm.UseSystemPasswordChar = true;
             // 
             // txtEmail
             // 
@@ -121,6 +122,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(211, 23);
             txtPassword.TabIndex = 9;
+            txtPassword.UseSystemPasswordChar = true;
             // 
             // RegisterForm
             // 
@@ -138,6 +140,7 @@
             Controls.Add(button1);
             Controls.Add(cmbRole);
             Name = "RegisterForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RegisterForm";
             ResumeLayout(false);
             PerformLayout();

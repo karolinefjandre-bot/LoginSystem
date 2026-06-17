@@ -72,6 +72,7 @@
             Controls.Add(BtnLogout);
             Controls.Add(btnAdminPanel);
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MainForm";
             Load += MainForm_Load;
             ResumeLayout(false);

@@ -18,7 +18,7 @@ namespace LoginSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Garante qu o banco seja criado e as migrations aplicadas 
+            //Garante que o banco seja criado e as migrations aplicadas 
             using (var db = new AppDbContext())
             { 
             db.Database.EnsureCreated(); //Cria o banco se não existir
