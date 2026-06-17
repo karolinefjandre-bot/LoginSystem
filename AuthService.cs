@@ -35,7 +35,7 @@ namespace LoginSystem
             return valid ? user : null;
         }
 
-        public static bool Register(string username, string email, string password, string roleName = "User")
+        public static bool RegisterUser(string username, string email, string password, string roleName = "User")
         { 
         using var db = new AppDbContext();
             //verifica se o usuário já existe
