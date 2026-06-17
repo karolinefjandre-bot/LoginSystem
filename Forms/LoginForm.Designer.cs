@@ -28,12 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "LoginForm";
+            label1 = new Label();
+            label2 = new Label();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnLogin = new Button();
+            lnkRegister = new LinkLabel();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F);
+            label1.Location = new Point(88, 54);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 19);
+            label1.TabIndex = 0;
+            label1.Text = "User:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F);
+            label2.Location = new Point(69, 113);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 19);
+            label2.TabIndex = 1;
+            label2.Text = "Password:";
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(190, 50);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(215, 23);
+            txtUsername.TabIndex = 2;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(185, 109);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(220, 23);
+            txtPassword.TabIndex = 3;
+            // 
+            // btnLogin
+            // 
+            btnLogin.Location = new Point(111, 188);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(75, 23);
+            btnLogin.TabIndex = 4;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // lnkRegister
+            // 
+            lnkRegister.AutoSize = true;
+            lnkRegister.Location = new Point(301, 196);
+            lnkRegister.Name = "lnkRegister";
+            lnkRegister.Size = new Size(50, 15);
+            lnkRegister.TabIndex = 5;
+            lnkRegister.TabStop = true;
+            lnkRegister.Text = "Registro";
+            lnkRegister.LinkClicked += lnkRegister_LinkClicked;
+            // 
+            // LoginForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(497, 296);
+            Controls.Add(lnkRegister);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "LoginForm";
+            Text = "LoginForm";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Label label2;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
+        private Button btnLogin;
+        private LinkLabel lnkRegister;
     }
 }
